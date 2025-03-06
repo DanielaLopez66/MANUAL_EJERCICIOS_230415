@@ -1,0 +1,35 @@
+<nav class="bg-[#805841] text-[#DCF7F3] p-4 flex justify-between items-center fixed top-0 w-full shadow-lg z-50 border-b-4 border-[#F5A2A2] retro-font">
+    <!-- Menú Principal -->
+    <div class="ml-10 flex space-x-4">
+        <button class="bg-[#FFFCDD] text-[#805841] px-4 py-2 rounded shadow-md border border-[#F5A2A2] 
+        hover:bg-[#FFD8D8] hover:text-[#805841] transition-all duration-300">Inicio</button>
+        
+        <!-- Prácticas -->
+        <div class="relative group">
+            <button class="bg-[#FFFCDD] text-[#805841] px-4 py-2 rounded shadow-md border border-[#F5A2A2] 
+            hover:bg-[#FFD8D8] hover:text-[#805841] transition-all duration-300">Prácticas ▼</button>
+            <div class="absolute hidden group-hover:block bg-[#FFD8D8] text-[#805841] shadow-lg mt-2 rounded border border-[#F5A2A2]">
+                <a class="block px-4 py-2 hover:bg-[#F5A2A2] transition-all duration-300" routerLink="/practica1">Práctica 1</a>
+                <a class="block px-4 py-2 hover:bg-[#F5A2A2] transition-all duration-300" routerLink="/practica2">Práctica 2</a>
+                <a class="block px-4 py-2 hover:bg-[#F5A2A2] transition-all duration-300" routerLink="/practica3">Práctica 3</a>
+            </div>
+        </div>
+        
+        <!-- Examen Práctico -->
+        <button class="bg-[#FFFCDD] text-[#805841] px-4 py-2 rounded shadow-md border border-[#F5A2A2] 
+        hover:bg-[#FFD8D8] hover:text-[#805841] transition-all duration-300">Examen Práctico</button>
+    </div>
+
+    <!-- Icono Usuario -->
+    <div class="relative group">
+        <button class="flex items-center space-x-2 bg-[#FFFCDD] text-[#805841] px-4 py-2 rounded shadow-md border border-[#F5A2A2] 
+        hover:bg-[#FFD8D8] hover:text-[#805841] transition-all duration-300">
+            <span>Usuario</span>
+            <img class="w-8 h-8 rounded-full border border-[#805841]" src="https://via.placeholder.com/40" alt="User avatar" />
+        </button>
+        <div class="absolute hidden group-hover:block bg-[#FFD8D8] text-[#805841] shadow-lg right-0 mt-2 rounded border border-[#F5A2A2]">
+            <a class="block px-4 py-2 hover:bg-[#F5A2A2] transition-all duration-300">Perfil</a>
+            <a class="block px-4 py-2 hover:bg-[#F5A2A2] transition-all duration-300">Cerrar sesión</a>
+        </div>
+    </div>
+</nav>
